@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Page Link
 
-https://neitodesu.github.io/Frontend-mentor-3-column-card/
+<a href="https://neitodesu.github.io/Frontend-mentor-3-column-card/">3 Card Column</a>
 
 
 
