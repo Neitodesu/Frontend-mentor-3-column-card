@@ -17,8 +17,8 @@ Users should be able to:
 
 ### Screenshot
 
-![Screenshot 1](/images/Screenshot%20mobile.png)
-![Screenshot 2](/images/Screenshot%20desktop.png)
+![Screenshot 1](/design/Screenshot-desktop.png)
+![Screenshot 2](/design/Screenshot-mobile.png)
 
 
 ### Built with
