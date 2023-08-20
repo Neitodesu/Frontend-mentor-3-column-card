@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+:root {
+  --clr-card-1: hsl(31, 77%, 52%);
+  --clr-card-2: hsl(184, 100%, 22%);
+  --clr-card-3: hsl(179, 100%, 13%);
+  --clr-p: hsla(0, 0%, 100%, 0.75);
+  --clr-bg-hd-btn: hsl(0, 0%, 95%);
+  --ff-heading: "Big Shoulders Display";
+  --ff-p: "Lexend Deca";
+  --fw-700: 700;
+  --fw-400: 400;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  font-size: 0.938rem;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+body {
+  background-color: var(--clr-bg-hd-btn);
+  display: flex;
+  align-items: center;
+}
+body .preview-cards {
+  width: 325px;
+  margin: 6em auto;
+  border-radius: 0.6em;
+  overflow: hidden;
+}
+body .preview-cards #card-1 {
+  background-color: var(--clr-card-1);
+}
+body .preview-cards #card-2 {
+  background-color: var(--clr-card-2);
+}
+body .preview-cards #card-3 {
+  background-color: var(--clr-card-3);
+}
+body .preview-cards .card {
+  padding: 1em;
+  height: 440px;
+}
+body .preview-cards .card .card-details {
+  padding: 1em 2em;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+body .preview-cards .card .card-details h2 {
+  font-family: var(--ff-heading);
+  color: var(--clr-bg-hd-btn);
+  font-weight: var(--fw-700);
+  font-size: 2.4rem;
+  text-transform: uppercase;
+}
+body .preview-cards .card .card-details p {
+  font-family: var(--ff-p);
+  color: var(--clr-p);
+  font-weight: var(--fw-400);
+}
+body .preview-cards .card .card-details button {
+  font-family: var(--ff-p);
+  font-weight: var(--fw-400);
+  background-color: var(--clr-bg-hd-btn);
+  border: 2px solid var(--clr-bg-hd-btn);
+  border-radius: 2em;
+  padding: 1em 2em;
+}
+body .preview-cards .card .card-details .button-1 {
+  color: var(--clr-card-1);
+}
+body .preview-cards .card .card-details .button-2 {
+  color: var(--clr-card-2);
+}
+body .preview-cards .card .card-details .button-3 {
+  color: var(--clr-card-3);
+}
+body .preview-cards .card .card-details button:hover {
+  cursor: pointer;
+  background-color: transparent;
+  color: var(--clr-bg-hd-btn);
+}
+
+@media only screen and (min-width: 975px) {
+  body {
+    height: 100vh;
+  }
+  body .preview-cards {
+    width: 920px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  body .preview-cards .card {
+    height: 500px;
+  }
+  body .preview-cards button {
+    margin-top: 6em;
+  }
+}/*# sourceMappingURL=main.css.map */

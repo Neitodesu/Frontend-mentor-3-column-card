@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+//* STYLINGS
+
+:root{
+
+  //* PRIMARY COLORS
+
+  --clr-card-1: hsl(31, 77%, 52%);
+  --clr-card-2: hsl(184, 100%, 22%);
+  --clr-card-3: hsl(179, 100%, 13%);
+
+  //* NEUTRAL COLORS
+
+  --clr-p: hsla(0, 0%, 100%, 0.75);
+  --clr-bg-hd-btn: hsl(0, 0%, 95%);
+
+  //* FONTS
+
+  --ff-heading: 'Big Shoulders Display';
+  --ff-p: 'Lexend Deca';
+  --fw-700: 700;
+  --fw-400: 400;
+}
+
+//* RESETS
+
+*,
+*::before,
+*::after{
+  box-sizing: border-box;
+}
+
+*{
+  margin: 0;
+}
+
+body{
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  font-size: .938rem;
+}
+
+img{
+  display: block;
+  max-width: 100%;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+//* MAIN STYLING
+
+body{
+  background-color: var(--clr-bg-hd-btn);
+  display: flex;
+  align-items: center;
+
+  .preview-cards{
+    width: 325px;
+    margin: 6em auto;
+    border-radius: .6em;
+    overflow: hidden;
+
+    #card-1{
+      background-color: var(--clr-card-1);
+    }
+
+    #card-2{
+      background-color: var(--clr-card-2);
+    }
+
+    #card-3{
+      background-color: var(--clr-card-3);
+    }
+
+    .card{
+      padding: 1em;
+      height: 440px;
+  
+      .card-details{
+        padding: 1em 2em;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-evenly;
+
+        h2{
+          font-family: var(--ff-heading);
+          color: var(--clr-bg-hd-btn);
+          font-weight: var(--fw-700);
+          font-size: 2.4rem;
+          text-transform: uppercase;
+        }
+
+        p{
+          font-family: var(--ff-p);
+          color: var(--clr-p);
+          font-weight: var(--fw-400);
+        }
+
+        button{
+          font-family: var(--ff-p);
+          font-weight: var(--fw-400);
+          background-color: var(--clr-bg-hd-btn);
+          border: 2px solid var(--clr-bg-hd-btn);
+          border-radius: 2em;
+          padding: 1em 2em;
+        }
+
+        .button-1{
+          color: var(--clr-card-1);
+        }
+
+        .button-2{
+          color: var(--clr-card-2);
+        }
+
+        .button-3{
+          color: var(--clr-card-3);
+        }
+
+        button:hover{
+          cursor: pointer;
+          background-color: transparent;
+          color: var(--clr-bg-hd-btn);
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 975px){
+  body{
+    height: 100vh;
+
+    .preview-cards{
+      width: 920px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .card{
+        height: 500px;
+      }
+
+      button{
+        margin-top: 6em;
+      }
+    }
+  }
+}
